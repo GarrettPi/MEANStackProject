@@ -1,0 +1,12 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+mat-card {
+  margin: auto;
+}
+
+mat-form-field{
+  width: 100%;
+}
+textarea{
+  width: 100%;
+}

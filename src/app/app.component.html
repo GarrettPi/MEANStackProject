@@ -1,2 +1,5 @@
-<h1>hello world</h1>
-<app-post></app-post>
+<app-header></app-header>
+<main>
+  <app-post (postCreated)="onPostAdded($event)"></app-post>
+  <app-post-list [posts]="posts"></app-post-list>
+</main>
