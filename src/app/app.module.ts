@@ -12,6 +12,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { HeaderComponent } from './components/header/header.component';
 import { PostListComponent } from './components/post-list/post-list.component'
+import { HttpClientModule } from '@angular/common/http'
+import { PostService } from './services/post.service';
 
 
 @NgModule({
@@ -29,9 +31,12 @@ import { PostListComponent } from './components/post-list/post-list.component'
     MatCardModule,
     MatButtonModule,
     MatToolbarModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
